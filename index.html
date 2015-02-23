@@ -49,28 +49,38 @@
           <p><a href="http://www.jenseitsderfenster.de/" target="_blank">Timo Scheffler</a> / <a href="http://www.skillworks.de/" target="_blank">Skillworks AG</a></p>
 
           <aside class="notes" data-markdown>
-            * Mich selber vorstellen
+Mich selber vorstellen
           </aside>
         </section>
 
-        <section class="todo">
+        <section>
           <h3>Was ist <span class="os">Open Source</span>?</h3>
           <p>
-            (definition irgnedwie)
+            <span class="claim">Open Source Software</span> <small><a href="http://opensource.org/osd">(Definition)</a></small>
+            <ul>
+              <li>Quellcode in lesbarer und verständlicher Form</li>
+              <li>darf beliebig kopiert, verbreitet und genutzt werden</li>
+              <li>darf verändert und in der veränderten Form weitergegeben werden</li>
+            </ul>
+          </p>
+          <p>
+            <span class="claim">Freie Software</span> <small><a href="https://www.gnu.org/philosophy/free-sw.html">(Definition)</a></small>
+            <ul>
+              <li>wie oben, aber mit mehr Ideologie</li>
+              <li>stärkt die Rechte der Anwender</li>
+            </ul>
           </p>
 
           <aside class="notes" data-markdown>
-
+Veränderte Form weitergeben: Auf Lizenzen kommen wir später
           </aside>
         </section>
 
-        <section class="todo">
-          <p>
-            (grafik: bekannte opensourceprojekte)
-          </p>
+        <section data-background="#fff" style="height: 100%">
+          <img src="img/applications.png" style="height: 100%; display: block; margin: auto">
 
           <aside class="notes" data-markdown>
-
+Eigentlich müssten alle das kennen...
           </aside>
         </section>
 
@@ -159,19 +169,16 @@
             Feature / Bug (Poweruser, Entwickler) -> Issue -> Diskussion, Konkretisierung -> Jemand(tm) startet Arbeit daran -> Pull Request -> Code-Review, Diskussion, Anpassung -> Merge (Changelog, Issue schließen)
           )
           <aside class="notes" data-markdown>
-            Beispielhaft **diaspora**. Gibt verschiedene Workflows.
+Beispielhaft **diaspora**. Gibt verschiedene Workflows.
 
-            "Contributor License Agreement" bei FreeSoftwareFoundation, alle rechte an die FSF
+"Contributor License Agreement" bei FreeSoftwareFoundation, alle rechte an die FSF
           </aside>
         </section>
 
-        <section class="todo">
-          <h3>Versioning</h3>
-          <p>TODO: Bild einfügen mit dem pfeil</p>
+        <section>
+          <img src="img/open-source-vector-diamond-2.png">
           <aside class="notes" data-markdown>
-            Beispielhaft **diaspora**. Gibt verschiedene Workflows.
-
-            "Contributor License Agreement" bei FreeSoftwareFoundation, alle rechte an die FSF
+            Rechts ist vorne
           </aside>
         </section>
 
@@ -240,9 +247,9 @@
             <li>Breites Spektrum an Testumgebungen</li>
           </ul>
           <aside class="notes" data-markdown>
-            Verbreitung der Software, bekanntmachung des Namens
+Verbreitung der Software, bekanntmachung des Namens
 
-            Community realisiert dringende Dinge, wo der meiste Druck ist
+Community realisiert dringende Dinge, wo der meiste Druck ist
           </aside>
         </section>
 
@@ -256,18 +263,18 @@
             <li>Kundenspezifische Features als Auftrag</li>
           </ul>
           <aside class="notes" data-markdown>
-            * Not invented here Syndrom
-            * Genug kostenlose Konkurrenzprodukte
-            * Dual Licensing: Copyleft-Lizenz als opensource, bezahlte Lizenz als "kannste auch bei dir integrieren, ohne deinen Code offenlegen zu müssen"
+* Not invented here Syndrom
+* Genug kostenlose Konkurrenzprodukte
+* Dual Licensing: Copyleft-Lizenz als opensource, bezahlte Lizenz als "kannste bei dir integrieren, ohne deinen Code offenzulegen"
           </aside>
         </section>
 
         <section>
           <h3>Kontrolle behalten</h3>
           <ul>
-            <li>Forks sind gut. Der Code kommt zurück.</li>
             <li>Gute Leute fördern</li>
             <li>Offene Diskussionen, auf Ideen eingehen</li>
+            <li>Forks sind gut. Der Code kommt zurück.</li>
           </ul>
           <aside class="notes" data-markdown>
             * Forks: Herumprobieren, Code will wieder ins Hauptprojekt, wenn es gut funktioniert.
@@ -350,7 +357,7 @@ Im Anschluss wird gezeigt, wie man sich an der Weiterentwicklung beteiligen kann
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,
+        controls: false,
         progress: true,
         history: true,
         center: true,

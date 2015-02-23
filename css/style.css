@@ -13,3 +13,9 @@
 .todo {
   background-color: #800;
 }
+
+img {
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
