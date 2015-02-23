@@ -20,6 +20,9 @@
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
+    <!-- my own style -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
@@ -41,7 +44,7 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1>Open Source<br>Entwicklung</h1>
+          <h1><span class="os">Open Source</span><br>Entwicklung</h1>
           <h3>Verstehen, Beitragen, Profitieren.</h3>
           <p><a href="http://www.jenseitsderfenster.de/" target="_blank">Timo Scheffler</a> / <a href="http://www.skillworks.de/" target="_blank">Skillworks AG</a></p>
 
@@ -50,8 +53,8 @@
           </aside>
         </section>
 
-        <section>
-          <h3>Free / Open Source Software</h3>
+        <section class="todo">
+          <h3>Was ist <span class="os">Open Source</span>?</h3>
           <p>
             (definition irgnedwie)
           </p>
@@ -61,10 +64,9 @@
           </aside>
         </section>
 
-        <section>
-          <h3>dings</h3>
+        <section class="todo">
           <p>
-            
+            (grafik: bekannte opensourceprojekte)
           </p>
 
           <aside class="notes" data-markdown>
@@ -72,11 +74,42 @@
           </aside>
         </section>
 
-        <section>
-          <h3>dings</h3>
-          <p>
-            
-          </p>
+        <section data-transition="fade">
+          <h3>Warum <span class="os">Open Source</span>?</h3>
+          <p class="claim">Der Code ist für Dritte einsehbar.</p>
+          <ul>
+            <li>Code als Dokumentation / Lernmaterial</li>
+            <li>Vertrauen in die Integrität des Codes!</li>
+            <li>Unabhängiger Security-Review</li>
+          </ul>
+
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Warum <span class="os">Open Source</span>?</h3>
+          <p class="claim">Der Code ist kann von Dritten editiert werden.</p>
+          <ul>
+            <li>Neue Features</li>
+            <li>Bugfixes</li>
+            <li>Experimentielle Features</li>
+          </ul>
+
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Warum <span class="os">Open Source</span>?</h3>
+          <p class="claim">Archivierung / Sicherheit</p>
+          <ul>
+            <li>Portierung auf andere Systeme</li>
+            <li>Keine Aktivierungsserver / auslaufende Unterstützung</li>
+            <li>Problemlose Duplikation ganzer Systeme</li>
+          </ul>
 
           <aside class="notes" data-markdown>
 
@@ -84,13 +117,138 @@
         </section>
 
         <section>
-          <h3>dings</h3>
-          <p>
-            
-          </p>
+          <h2><span class="os">Open Source</span><br>Community Projekt</h2>
 
           <aside class="notes" data-markdown>
 
+          </aside>
+        </section>
+
+        <section class="todo">
+          <h3>Organisation</h3>
+          (grafik:
+            Wenige Lead-Entwickler / Maintainer
+                Verwalten, treffen Entscheidungen, bieten Rückhalt
+            Entwickler / "Contributors"
+            Poweruser
+            "normale" Nutzer
+          )
+
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section>
+          <h3>Infrastruktur</h3>
+          <ul>
+            <li>Git / Mercurial</li>
+            <li>Issue-Tracker, Entscheidungsfindungs-Tool</li>
+            <li>Wiki (Dokumentation)</li>
+            <li>Mailingliste, IRC</li>
+          </ul>
+
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section class="todo">
+          <h3>Arbeit im Projekt</h3>
+          (grafik:
+            Feature / Bug (Poweruser, Entwickler) -> Issue -> Diskussion, Konkretisierung -> Jemand(tm) startet Arbeit daran -> Pull Request -> Code-Review, Diskussion, Anpassung -> Merge (Changelog, Issue schließen)
+          )
+          <aside class="notes" data-markdown>
+            Beispielhaft **diaspora**. Gibt verschiedene Workflows.
+
+            "Contributor License Agreement" bei FreeSoftwareFoundation, alle rechte an die FSF
+          </aside>
+        </section>
+
+        <section>
+          <h2>Einsatz von<br><span class="os">Open Source</span><br> Software</h2>
+
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section class="todo">
+          <h3>Lizenzen (TODO)</h3>
+          <table>
+            <tbody>
+              <tr>
+                <th></th>
+                <th>AGPL<br><small>GPL, LGPL</small></th>
+                <th>MIT / BSD</th>
+                <th>Mozilla PL</th>
+              </tr>
+              <tr>
+                <td>Änderungen unter gleicher Lizenz</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✔</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section>
+          <h3>Mitarbeit in der Arbeitszeit</h3>
+          <ul>
+            <li>Neue Frameworks, Konzepte, Code-Styles</li>
+            <li>Durch PR-Review bessere Code-Qualität</li>
+            <li>Kontakt mit externen Entwicklern</li>
+            <li>Mitarbeiter werden Experten für das Projekt<br>
+              ➝ vermarktbar?
+            </li>
+          </ul>
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section>
+          <h2>Eigene Projekte als<br><span class="os">Open Source</span><br> Software</h2>
+
+          <aside class="notes" data-markdown>
+
+          </aside>
+        </section>
+
+        <section>
+          <h3>Was bringt uns das...</h3>
+          <ul>
+            <li>Gute PR / Gutes Karma</li>
+            <li>Wirkt attraktiv auf potentielle Mitarbeiter</li>
+            <li>Hohe Transparenz für Kunden</li>
+            <li>Community arbeitet mit</li>
+            <li>Breites Spektrum an Testumgebungen</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            Verbreitung der Software, bekanntmachung des Namens
+
+            Community realisiert dringende Dinge, wo der meiste Druck ist
+          </aside>
+        </section>
+
+        <section>
+          <h3>Aber unseren Code... verschenken?</h3>
+          <ul>
+            <li>Konkurrent bedient sich am Code?</li>
+            <li>Wer kein Geld dafür ausgeben möchte, tut es auch nicht</li>
+            <li>Dual Licensing</li>
+            <li>Support-Dienstleistungen verkaufen</li>
+            <li>Kundenspezifische Features als Auftrag</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * Not invented here Syndrom
+            * Genug kostenlose Konkurrenzprodukte
+            * Dual Licensing: Copyleft-Lizenz als opensource, bezahlte Lizenz als "kannste auch bei dir integrieren, ohne deinen Code offenlegen zu müssen"
           </aside>
         </section>
 
@@ -142,12 +300,18 @@ Im Anschluss wird gezeigt, wie man sich an der Weiterentwicklung beteiligen kann
             * Um als Firma das Projekt zu kontrollieren, muss man die Leute nach vorne Stellen, die die Kernentwickler sind, die viel Einfluss durch Kompetenz haben. Personen bringen Innovation, nicht die Firma als Gebilde - und deshalb müssen Personen als ganz wichtig behandelt werden.
         -->
 
-        <section style="text-align: left;">
+        <section>
           <h2>Weiterführende Links</h2>
           <ul>
             <li><a href="http://opensource.com/business/13/2/why-company-contribute-open-source">Why your company should contribute to open source</a></li>
             <li><a href="http://techblog.netflix.com/2010/12/why-we-use-and-contribute-to-open.html">Netflix: Why we use and contribute to open source software</a></li>
+            <li><a href="https://statuscode.ch/2015/02/contributing-back-to-open-source/">ownCloud: Contributing back to open source</a></li>
           </ul>
+        </section>
+
+        <section class="todo">
+          <h2>Vielen Dank! Fragen?</h2>
+          <p>(Kontaktinfos, Firma, lustiges Bild)</p>
         </section>
 
       </div>
