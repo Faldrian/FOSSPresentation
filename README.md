@@ -2,6 +2,7 @@
 
 Eine Präsentation für das [Agile Breakfast](http://blog.sybit.de/?s=breakfast ), in der ich das Grundprinzip von Open Source Software kurz vorstelle und dann auf die Entwicklungsmethoden und Zusammenarbeit der Community eingehe. Ich schließe damit, inwiefern auch Firmen vom Einsatz und der Mitarbeit an Open Source Software profitieren können.
 
+[Präsentation anschauen](https://faldrian.github.io/FOSSPresentation/ )
 
 ### Verweise
 
