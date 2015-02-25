@@ -76,8 +76,11 @@ Veränderte Form weitergeben: Auf Lizenzen kommen wir später
           </aside>
         </section>
 
-        <section data-background="#fff" style="height: 100%">
-          <img src="img/applications.png" style="height: 100%; display: block; margin: auto">
+        <section data-background="#fff" style="height: 100%; padding: 0">
+          <div >
+            <img src="img/applications.png" style="display: block; position: absolute; top: 48%; transform: translateY(-50%)">
+          </div>
+          
 
           <aside class="notes" data-markdown>
 Eigentlich müssten alle das kennen...
@@ -134,15 +137,14 @@ Eigentlich müssten alle das kennen...
           </aside>
         </section>
 
-        <section class="todo">
+        <section>
           <h3>Organisation</h3>
-          (grafik:
-            Wenige Lead-Entwickler / Maintainer
-                Verwalten, treffen Entscheidungen, bieten Rückhalt
-            Entwickler / "Contributors"
-            Poweruser
-            "normale" Nutzer
-          )
+          <ul>
+            <li>Lead-Entwickler / Maintainer</li>
+            <li>Entwickler / "Contributors"</li>
+            <li>Poweruser</li>
+            <li>"normale" Nutzer</li>
+          </ul>
 
           <aside class="notes" data-markdown>
 
@@ -163,11 +165,9 @@ Eigentlich müssten alle das kennen...
           </aside>
         </section>
 
-        <section class="todo">
+        <section data-background="#fff">
           <h3>Arbeit im Projekt</h3>
-          (grafik:
-            Feature / Bug (Poweruser, Entwickler) -> Issue -> Diskussion, Konkretisierung -> Jemand(tm) startet Arbeit daran -> Pull Request -> Code-Review, Diskussion, Anpassung -> Merge (Changelog, Issue schließen)
-          )
+          <img src="img/workflow.svg">
           <aside class="notes" data-markdown>
 Beispielhaft **diaspora**. Gibt verschiedene Workflows.
 

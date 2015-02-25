@@ -19,3 +19,8 @@ img {
   background: none !important;
   box-shadow: none !important;
 }
+
+.imageframe {
+  height: 100%;
+  position: relative;
+}
