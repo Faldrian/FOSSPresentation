@@ -39,6 +39,12 @@
 
   <body>
 
+  <!-- Abstract:
+Wir alle benutzen Open Source Software, viele haben sie bereits in Projekten verwendet (z.B. Frameworks/Libraries in Webprojekten) und nehmen es für gegeben hin, dass solche Software existiert. Doch wie entsteht solche Software?
+Im Vortrag gibt es einen Überblick über verwendete Tools zur Kommunikation und Entwicklung, Umgang und Einbindung der Community und Organisationsstrukturen.
+Im Anschluss wird gezeigt, wie man sich an der Weiterentwicklung beteiligen kann und wieso Firma und Mitarbeiter davon profitieren können.
+  -->
+
     <div class="reveal">
 
       <!-- Any section element inside of this container is displayed as a slide -->
@@ -140,10 +146,10 @@ Eigentlich müssten alle das kennen...
         <section>
           <h3>Organisation</h3>
           <ul>
-            <li>Lead-Entwickler / Maintainer</li>
-            <li>Entwickler / "Contributors"</li>
-            <li>Poweruser</li>
             <li>"normale" Nutzer</li>
+            <li>Poweruser</li>
+            <li>Entwickler / "Contributors"</li>
+            <li>Lead-Entwickler / Maintainer</li>
           </ul>
 
           <aside class="notes" data-markdown>
@@ -190,27 +196,37 @@ Beispielhaft **diaspora**. Gibt verschiedene Workflows.
           </aside>
         </section>
 
-        <section class="todo">
-          <h3>Lizenzen (TODO)</h3>
+        <section>
+          <h3>Lizenzen</h3>
           <table>
-            <tbody>
-              <tr>
-                <th></th>
-                <th>AGPL<br><small>GPL, LGPL</small></th>
-                <th>MIT / BSD</th>
-                <th>Mozilla PL</th>
-              </tr>
-              <tr>
-                <td>Änderungen unter gleicher Lizenz</td>
-                <td>✓</td>
-                <td>✗</td>
-                <td>✔</td>
-              </tr>
-            </tbody>
+            <tr>
+              <td><span class="claim">GPL</span>, <span class="claim">AGPL</span>:</td>
+              <td>
+                Abgeleitete Werke ⇢ gleiche Lizenz<br>
+                Source Code veröffentlichen
+              </td>
+            </tr>
+            <tr>
+              <td><span class="claim">LGPL</span>:</td>
+              <td>wie GPL aber LGPL-Module können in proprietärer Software benutzt werden</td>
+            </tr>
+            <tr>
+              <td><span class="claim">Mozilla PL</span>:</td>
+              <td>wie GPL, aber "gleiche Lizenz" beschränkt sich auf Dateien bereits unter MPL</td>
+            </tr>
+            <tr>
+              <td><span class="claim">BSD</span>, <span class="claim">MIT</span>, <span class="claim">Apache</span>:</td>
+              <td>
+                Abgeleitete Werke ⇢ egal<br>
+                Lizenzbedingungen beilegen
+              </td>
+            </tr>
           </table>
 
-          <aside class="notes" data-markdown>
+          <p><a href="https://en.wikipedia.org/wiki/WTFPL"><small>WTFPL</small></a></p>
 
+          <aside class="notes" data-markdown>
+Public Domain
           </aside>
         </section>
 
@@ -265,6 +281,7 @@ Community realisiert dringende Dinge, wo der meiste Druck ist
           <aside class="notes" data-markdown>
 * Not invented here Syndrom
 * Genug kostenlose Konkurrenzprodukte
+* Leute privat begeistert -> Einsatz im Kommerziellen Umfeld wahrscheinlich
 * Dual Licensing: Copyleft-Lizenz als opensource, bezahlte Lizenz als "kannste bei dir integrieren, ohne deinen Code offenzulegen"
           </aside>
         </section>
@@ -281,55 +298,6 @@ Community realisiert dringende Dinge, wo der meiste Druck ist
           </aside>
         </section>
 
-
-        <!-- Abstract:
-Wir alle benutzen Open Source Software, viele haben sie bereits in Projekten verwendet (z.B. Frameworks/Libraries in Webprojekten) und nehmen es für gegeben hin, dass solche Software existiert. Doch wie entsteht solche Software?
-Im Vortrag gibt es einen Überblick über verwendete Tools zur Kommunikation und Entwicklung, Umgang und Einbindung der Community und Organisationsstrukturen.
-Im Anschluss wird gezeigt, wie man sich an der Weiterentwicklung beteiligen kann und wieso Firma und Mitarbeiter davon profitieren können.
-        -->
-
-        <!-- Motivation, Publikum einfangen
-          * Wer benutzt OS?
-          * Wer hat schonmal beigetragen?
-        -->
-
-        <!-- Wie funktioniert ein OS-Projekt?
-          * Community
-            * Es sind selten Demokratien
-            * Am besten funktionierts, wenn es eine Gruppe von sich einigen starken Führungspersönlichkeiten gibt, die im Konfliktfall eine Moderation der Meinungen übernehmen und dann eine Meinung durchsetzen. Alle fühlen sich einbezogen und kommen schon irgendwie klar.
-          * verwendete Tools
-          * Vorgehensmodelle / Prozesse
-          * Lizenzen (später wichtig, kurz anreißen)
-          * Beispiel: Diaspora
-        -->
-
-        <!-- Was hab ich als Firma davon?
-          * Entwicklersicht:
-            * offener Code = Nachvollziehbarkeit statt Blackbox
-            * hohe Transparenz bei Bugfixes (man sieht, woran gearbeitet wird und wie weit die Leute sind)
-            * Bugs kann man sogar selber fixen oder Ursachen finden
-            * Software kann leichter angepasst / erweitert werden
-          * Dem Projekt etwas zurückgeben:
-            * Bugfixes ins Projekt zurückgeben
-            * Features, die man für einen Kunden sowieso implementiert hat, zurückgeben
-            * Projekt wird bekannter, wenn es öfter verwendet und auch referenziert wird
-          * Verwaltungssicht:
-            * Gute PR: Mitarbeit an OS-Projekten gibt eine menge gutes Karma
-            * Die Software wird besser (hätte man sowieso fixen müssen)
-            * Mitarbeiter bekommen Einblicke in Funktionsweise der Software
-              * Gutes Training, lernen andere Stile kennen, andere Strukturen
-              * Sind hinterher Experten auf dem Gebiet
-              * Dieses Expertenwissen kann man auch weitervermarkten
-            * Aber unsere Arbeit... einfach offen?
-              * Die Leute, die es dann stattdessen kostenlos verwenden hätten sowieso niemals Geld für die Software ausgegeben (Die Frage ist da eher: Nehme ich kostenlose Variante A, B oder C und welche macht es besser)
-              * Die Leute, die bisher schon Kunden sind, bleiben Kunden, wenn der Service stimmt
-              * Wenn jemand die Software bereits aus der freien Version kennt, schlägt er sie vielleicht im Arbeitskontext eher mal vor - und da stehen dann ggf. Ressourcen zur Verfügung auch professionelle Betreuung / Support zu kaufen oder es sich "machen zu lassen"
-              * Konkurrenz übernimmt den Code? Not-invented-here-Syndrom. Vermutlich eher nicht, sondern sie bauen es selber.
-              * Wenn ein Feature oder eine Modifikation für einen Kunden speziell geschrieben wurde - dann ist sie bereits bezahlt. Wenn man dann dieses Feature an die Community gibt, gewinnt man Karma und man hat einen zufriedenen Kunden, bei dem das Feature eingesetzt wird. Potentielle Kunden können sich so sogar von der Qualität der geschriebenen Software überzeugen und erwägen, selber eine Erweiterung in Auftrag zu geben.
-            * Keine Angst vor Forks / Absplitterungen: Oftmals wird nur Herumprobiert oder Ausprobiert - wenns gut läuft, möchten die Leute es sowieso im "Mutterprojekt" wieder gemerged sehen und es kommt zurück.
-            * Um als Firma das Projekt zu kontrollieren, muss man die Leute nach vorne Stellen, die die Kernentwickler sind, die viel Einfluss durch Kompetenz haben. Personen bringen Innovation, nicht die Firma als Gebilde - und deshalb müssen Personen als ganz wichtig behandelt werden.
-        -->
-
         <section>
           <h2>Weiterführende Links</h2>
           <ul>
@@ -337,12 +305,14 @@ Im Anschluss wird gezeigt, wie man sich an der Weiterentwicklung beteiligen kann
             <li><a href="http://techblog.netflix.com/2010/12/why-we-use-and-contribute-to-open.html">Netflix: Why we use and contribute to open source software</a></li>
             <li><a href="https://statuscode.ch/2015/02/contributing-back-to-open-source/">ownCloud: Contributing back to open source</a></li>
             <li><a href="http://pingv.com/blog/laura/200702/how-to-use-open-source-and-how-not-to">How to use open source (and how not to)</a></li>
+            <li><a href="http://railean.net/index.php/2011/11/22/simple-comparison-of-open-source-software-licenses">Simple comparison of open source software licenses</a></li>
           </ul>
         </section>
 
-        <section class="todo">
-          <h2>Vielen Dank! Fragen?</h2>
-          <p>(Kontaktinfos, Firma, lustiges Bild)</p>
+        <section>
+          <h2>Vielen Dank!<br><span class="claim">Fragen?</span></h2>
+          <p>timo.scheffler@skillworks.de</p>
+            <p><small>(Folien auf: <a href="https://github.com/Faldrian/FOSSPresentation">https://github.com/Faldrian/FOSSPresentation</a>)</small></p>
         </section>
 
       </div>
